@@ -1,0 +1,31 @@
+<hr>
+<p>todo-input works!</p>
+
+<div>
+  ToDo title: {{todoTitle}}
+</div>
+
+<input [(ngModel)]="todoTitle" (keyup.enter)="submitTodo2()" type="text">
+<!--<input [(ngModel)]="todoTitle" type="text">-->
+
+<button (click)="submitTodo1('Button submit_from_todo_input!')" >
+  Submit1
+</button>
+
+<button (click)="submitTodo2()" >
+  Submit2
+</button>
+
+<hr>
+<div>
+  NewDay title: {{newDay}}
+</div>
+<input [(ngModel)]="newDay" (keyup.enter)="submitTodo4()" type="text">
+
+<button (click)="submitTodo3('Button-3 submit_from_todo_input!')" >
+  Submit3
+</button>
+
+<button (click)="submitTodo4()" >
+  Submit4
+</button>
